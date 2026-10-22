@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="labGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0891b2" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="flaskLiquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#0284c7" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#labGrad)" />
+  
+  <!-- Subtle inner glow -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="white" stroke-width="4" stroke-opacity="0.2" />
+
+  <!-- Medical Cross Badge in upper right -->
+  <g transform="translate(350, 60)" opacity="0.95">
+    <circle cx="40" cy="40" r="32" fill="white" />
+    <path d="M40 24 V56 M24 40 H56" stroke="#0891b2" stroke-width="8" stroke-linecap="round" />
+  </g>
+
+  <!-- Laboratory Flask Icon Center -->
+  <g transform="translate(136, 110)" filter="url(#shadow)">
+    <!-- Flask Outline -->
+    <path d="M90 20 H150 M120 20 V110 L220 250 C236 274 218 300 188 300 H52 C22 300 4 274 20 250 L120 110 V20" 
+          stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="rgba(255,255,255,0.08)" />
+    
+    <!-- Liquid inside -->
+    <path d="M45 258 L78 208 C90 200 110 205 125 210 C140 215 155 215 170 205 L195 258 C206 275 192 292 172 292 H68 C48 292 34 275 45 258 Z" 
+          fill="url(#flaskLiquid)" opacity="0.9" />
+
+    <!-- Bubbles -->
+    <circle cx="105" cy="245" r="7" fill="white" opacity="0.8" />
+    <circle cx="135" cy="230" r="11" fill="white" opacity="0.7" />
+    <circle cx="150" cy="265" r="5" fill="white" opacity="0.9" />
+
+    <!-- Measurement markings on neck -->
+    <line x1="120" y1="90" x2="135" y2="90" stroke="white" stroke-width="4" stroke-linecap="round" />
+    <line x1="120" y1="115" x2="142" y2="115" stroke="white" stroke-width="4" stroke-linecap="round" />
+    <line x1="120" y1="140" x2="138" y2="140" stroke="white" stroke-width="4" stroke-linecap="round" />
+  </g>
+</svg>

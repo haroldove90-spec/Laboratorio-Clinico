@@ -1,0 +1,6 @@
+{
+  "name": "Laboratorio Clínico",
+  "description": "Sistema integral de gestión de laboratorio clínico con roles, recepción, toma de muestras, captura de resultados, entrega por WhatsApp y corte de caja.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
